@@ -1,68 +1,19 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ButcherBox Frontend Interview Project
 
-## Available Scripts
+Fork this repo and clone to your machine. Run yarn install to install the npm dependencies. Run yarn start to start up the local server.
 
-In the project directory, you can run:
+When have completed the project please commit and push up to your forked repo and email me at jeffreygnatek@butcherbox.com.
 
-### `yarn start`
+Please recreate the design shown at [here](https://www.figma.com/file/SqKMB75lspAOntDACqXeNE/Untitled?node-id=1%3A2) 
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Directions
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+The objective of this exercise is to see how well you can replicate a design file and create a basic example of a shopping cart. 
 
-### `yarn test`
+We have included the Roboto font already (link found in public/index.html)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+You will find mock data in src/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. The required functionality is that clicking the add button will add 1 unit of the item. When an item has been added, it will then show a quantity input in place of the add button, allowing the user to add more items or remove items and even reset it back to its initial state. The data.json file has both a total_allowed and an allowed property per item. The total is how many total units the user can add to their shopping cart. The allowed property indicated how many of that item the user can add. You will notice there are several values for allowed, including -1 and 0. -1 indicated that there is no limit to the ammount a user can add up to the total ammount. 0 indicated this item is sold out and no items can be added. Once an item has reached its allowed quantity, the buttons to add should be disabled (but not the minus). As the user adds items, update the progress bar at the bottom to reflect the percentage of items until the order is complete. Each item will show up in the sidebar cart as its added, with its current quantity. The X button on each item allows the user to remove all units of that item from the cart with a single click.
 
-### `yarn build`
+If you have any questions please feel free to contact me directly, jeffreygnatek@butcherbox.com
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Thank you

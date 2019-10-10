@@ -1,0 +1,50 @@
+{
+    "total_allowed": 10,
+    "items": [
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Prime Rib",
+            "allowed": 1
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Chicken Wings",
+            "allowed": -1
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Pork Tenderloin",
+            "allowed": 2
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Hamburgers",
+            "allowed": -1
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Porter House",
+            "allowed": 2
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Scallops",
+            "allowed": 1
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Chicken Breast",
+            "allowed": -1
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Lobster",
+            "allowed": 0
+        },
+        {
+            "url": "https://picsum.photos/142/96",
+            "title": "Baby Back Ribs",
+            "allowed": 3
+        }
+    ]
+}
