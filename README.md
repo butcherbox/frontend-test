@@ -15,6 +15,8 @@ We have included the Roboto font already (link found in public/index.html)
 
 You will find mock data in src/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. You will want to move this to the public folder if using fetch to import it.
 
+We use styled-components and hooks but feel free to use whatever you are most comfortable with.
+
 ### Required Functionality
 
 Clicking the add button will add 1 unit of the item. 
