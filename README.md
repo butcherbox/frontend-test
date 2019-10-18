@@ -13,7 +13,7 @@ The objective of this exercise is to see how well you can replicate a design fil
 
 We have included the Roboto font already (link found in public/index.html)
 
-You will find mock data in public/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. 
+You will find mock data in src/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. You will want to move this to the public folder if using fetch to import it.
 
 ### Required Functionality
 
