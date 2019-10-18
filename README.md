@@ -4,7 +4,8 @@ Fork this repo and clone to your machine. Run yarn install to install the npm de
 
 When have completed the project please commit and push up to your forked repo and email me at jeffreygnatek@butcherbox.com.
 
-Please recreate the design shown at [here](https://www.figma.com/file/SqKMB75lspAOntDACqXeNE/Untitled?node-id=1%3A2) 
+Please recreate the design shown at [here](https://www.figma.com/file/SqKMB75lspAOntDACqXeNE/Untitled?node-id=1%3A2)
+note that you will need to signup for Figma to get access to the file's specific information around type etc.
 
 ## Directions
 
@@ -12,7 +13,7 @@ The objective of this exercise is to see how well you can replicate a design fil
 
 We have included the Roboto font already (link found in public/index.html)
 
-You will find mock data in src/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. 
+You will find mock data in public/data.json import/fetch/copy this into your app and render the items to match the look of the individual cards in the design. 
 
 ### Required Functionality
 
