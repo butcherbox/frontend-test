@@ -1,8 +1,8 @@
 # ButcherBox Frontend Interview Project
 
-Fork this repo and clone to your machine. Run yarn install to install the npm dependencies. Run yarn start to start up the local server.
+Clone this repo and run yarn install. Run yarn start to start up the local server.
 
-When have completed the project please commit and push up to your forked repo and email me at jeffreygnatek@butcherbox.com.
+When have completed the project please send a zip of your project without the node modules to jeffreygnatek@butcherbox.com.
 
 Please recreate the design shown at [here](https://www.figma.com/file/SqKMB75lspAOntDACqXeNE/Untitled?node-id=1%3A2)
 note that you will need to signup for Figma to get access to the file's specific information around type etc.
