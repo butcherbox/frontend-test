@@ -4,7 +4,7 @@ Clone this repo and run yarn install. Run yarn start to start up the local serve
 
 When have completed the project please send a zip of your project without the node modules to jeffreygnatek@butcherbox.com.
 
-Please recreate the design shown at [here](https://www.figma.com/file/SqKMB75lspAOntDACqXeNE/Untitled?node-id=1%3A2)
+Please recreate the design shown at [here](https://www.figma.com/file/7BRHaelWDqzJpGAP5tUBlP/Frontend-Test?node-id=0%3A1)
 note that you will need to signup for Figma to get access to the file's specific information around type etc.
 
 ## Directions
