@@ -55,17 +55,15 @@ const Item: React.FC<Props> = ({ item }) => {
    }
 
    return (
-      <ItemWrapper>
+      <ItemCard>
          {item.title}
          <button onClick={decrement} disabled={!canDecrement()}>-</button>
          <button onClick={increment} disabled={!canIncrement()}>+</button>
          <div>{item.quantityInCart}</div>
-      </ItemWrapper>
+      </ItemCard>
    )
 }
 
 export default Item
 
-const ItemWrapper = styled.li`
-   
-`
+const ItemCard = styled.li``

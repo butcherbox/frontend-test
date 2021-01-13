@@ -24,6 +24,4 @@ const ItemsList: React.FC = () => {
 export default ItemsList
 
 
-const ItemsContainer = styled.ul`
-   
-`
+const ItemsContainer = styled.ul``
