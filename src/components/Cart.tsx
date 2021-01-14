@@ -44,9 +44,15 @@ const Cart: React.FC = () => {
          </Header>
          <ProgressIndicator current={totalItemsInCart} max={totalAllowed} />
          <Contents>
-            {[...itemsInCart].sort((a, b) => a.title < b.title ? -1 : 1).map(item => (
-               <CartItem key={item.key} item={item} removeItem={() => remove(item)} />
-            ))}
+            {itemsInCart.length > 0 ? (
+               <>
+                  {[...itemsInCart].sort((a, b) => a.title < b.title ? -1 : 1).map(item => (
+                     <CartItem key={item.key} item={item} removeItem={() => remove(item)} />
+                  ))}
+               </>
+            ) : (
+               <p>Your box is empty</p>
+            )}
          </Contents>
       </div>
    )
@@ -59,7 +65,7 @@ const Header = styled.header`
    padding: 2rem 0;
 `
 const Contents = styled.div`
-   margin: 2rem 0;
+   margin: 1rem 0;
 `
 
 
@@ -87,9 +93,10 @@ const CartRow = styled.div`
    display: flex;
    font-size: 1.5rem;
    font-weight: 500;
+   padding: 1rem 0;
 
    & + & {
-      margin-top: 1rem;
+      border-top: 1px solid ${props => props.theme.colors.gray400};
    }
 
 `

@@ -44,13 +44,18 @@ export default App
 
 const SidePanel = styled.aside`
    background-color: ${props => props.theme.colors.sidePanelBg};
-   flex: 0 0 320px;
+   flex: 0 0 275px;
    overflow: auto;
    padding: 1rem;
+
+   @media(min-width: 950px) {
+      flex: 0 0 320px;
+   }
+
 `
 const Main = styled.main`
    flex: 1;
    height: 100%;
    overflow: auto;
-   padding: 3rem 1rem;
+   padding: 3rem 2rem;
 `

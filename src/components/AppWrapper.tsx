@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 import { useQuery } from 'react-query'
-import { useRecoilState } from 'recoil'
+import { useSetRecoilState } from 'recoil'
 import { v4 as uuid } from 'uuid'
 
 import GetItemsData from '../api/data'
@@ -11,8 +11,8 @@ import Item from '../types/item'
 
 const AppWrapper: React.FC = ({ children }) => {
 
-   const [items, setItems] = useRecoilState(itemsState)
-   const [totalAllowed, setTotalAllowed] = useRecoilState(totalAllowedState)
+   const setItems = useSetRecoilState(itemsState)
+   const setTotalAllowed = useSetRecoilState(totalAllowedState)
 
    const dataQuery = useQuery('global-data', GetItemsData, {
       onSuccess: data => {
