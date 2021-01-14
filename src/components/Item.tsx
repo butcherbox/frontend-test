@@ -49,18 +49,6 @@ const Item: React.FC<Props> = ({ item }) => {
       }
    }
 
-   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-      const existingValue = item.quantityInCart
-      const newValue = e.target.value
-
-      if (+newValue > existingValue) {
-         increment()
-      } else {
-         decrement()
-      }
-
-   }
-
    return (
       <ItemCard>
          <Hero>
@@ -76,13 +64,7 @@ const Item: React.FC<Props> = ({ item }) => {
                      <Button onClick={decrement} disabled={!canDecrement()}>
                         &mdash;
                      </Button>
-                     <QuantityInput
-                        max={item.allowed === -1 ? maxAllowed : item.allowed}
-                        min={0}
-                        onChange={handleInputChange}
-                        type="number"
-                        value={item.quantityInCart}
-                     />
+                     <Quantity>{item.quantityInCart}</Quantity>
                      <Button onClick={increment} disabled={!canIncrement()}>+</Button>
                   </QuantityActions>
                ) : item.allowed === 0 ? (
@@ -135,11 +117,10 @@ const QuantityActions = styled.div`
    grid-column-gap: 12px;
 `
 
-const QuantityInput = styled.input`
+const Quantity = styled.div`
+   align-items: center;
    border: 1px solid ${props => props.theme.colors.gray700};
    border-radius: 4px;
-   font-family: inherit;
-   font-size: 1rem;
-   text-align: center;
-   width: auto;
+   display: flex;
+   justify-content: center;
 `
